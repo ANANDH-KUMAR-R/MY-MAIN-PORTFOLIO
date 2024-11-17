@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="icon" href="assets/GitHub.png">
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "S74Gp5015i6bp0WlD",
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Anandh Kumar</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Anandh Kumar</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <!-- <img src="./assets/profile-pic.png" alt="John Doe profile picture" /> -->
+      <img src="./assets/PHOTO.jpg" alt="">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Anandh Kumer</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('assets/ANANDH CV.pdf', '_blank')">
+          View CV
+        </button>
+        <button class="btn btn-color-3"><a style="text-decoration: none;" href="assets/ANANDH CV.pdf"  download="ANANDH_CV.pdf">Download&nbsp;CV</a></button>     
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://linkedin.com/in/anandh-kumar-b062b8301' " />
+        <img src="./assets/Black_GitHub.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/PHOTO.jpg" alt="">
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Fresher <br />Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>BCA<br />Bachelors Computer Application</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Motivated and self-driven Junior Frontend Developer with proficiency in HTML, CSS, JavaScript,
+            ReactBootstrap and React.
+            Experienced in building responsive user interfaces and eager to contribute to real-time projects using
+            modern development practices.
+            Seeking an opportunity to apply and expand my frontend development and agile methodology expertise while
+            learning from senior professionals in a collaborative environment.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/HTML.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/CSS.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/JavaScript.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/React.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/Bootstrap.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Bootstrap</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title"> Others </h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/Git.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/GitHub.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>GitHub &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/Vs_Code.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>VS Code</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/Figma.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Figma &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--  -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Mern Full Stack Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/MongoDb.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MongoDB</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/Express.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Express &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                <p>In progress</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/React.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                <p>basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/Node.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                <p>basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container" id="experience-details-container">
+      <div class="overFlow">
+        <div class="about-containers">
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/Dynamic-Portfolio.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">PROFILE</h2>
+            <p><b>Technology: </b>HTML, CSS, Js.</p>
+            <p><b>Desc: </b>This is a dynamic portfolio website that showcases my skills and experience as a web
+              developer.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/PROFILE-Portfolio'"" >
+                Github
+              </button>
+              <button
+                class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/PROFILE-Portfolio/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/ANANDH KUMAR Portfolio.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">ANANDH&nbsp;PORTFOLIO</h2>
+            <p><b>Technology: </b>HTML, CSS, Js.</p>
+            <p><b>Desc: </b>This is a Responsive portfolio website that showcases my skills and experience as a web
+              developer.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/ANANDH-KUMAR-Portfolio'"" >
+                Github
+              </button>
+              <button
+                class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/ANANDH-KUMAR-Portfolio/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/Portfilio-Creative.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">CREATIVE&nbsp;PORTFOLIO</h2>
+            <p><b>Technology: </b>HTML, CSS, Js.</p>
+            <p><b>Desc: </b>This is a creative portfolio website that showcases my skills and experience as a web
+              developer.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/Creative-Portfolio'"" >
+                Github
+              </button>
+              <button
+                class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/Creative-Portfolio/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/website Portfolio.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">WEBSITE&nbsp;PORTFOLIO</h2>
+            <p><b>Technology: </b>HTML, CSS, Js.</p>
+            <p><b>Desc: </b>This is a website portfolio website that showcases my skills and experience as a web
+              developer.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/Portfolio-Website'"" >
+                Github
+              </button>
+              <button
+                class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/Portfolio-Website/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/Game Portfolio.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">GAME&nbsp;PORTFOLIO</h2>
+            <p><b>Technology: </b>HTML, CSS, Js.</p>
+            <p><b>Desc: </b>This is a game portfolio website that showcases my skills and experience as a web developer.
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/Game-Portfolio'"" >
+                Github
+              </button>
+              <button
+                class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/Game-Portfolio/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/Taj-Hotel.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">TAJ HOTEL</h2>
+            <p><b>Technology: </b>HTML, CSS, Js.</p>
+            <p><b>Desc: </b>This is a Taj Hotel website showcasing my web development skills with vibrant colors and
+              smooth animations.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/Taj-Hotel'"" >
+                Github
+              </button>
+              <button
+                class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/Taj-Hotel/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/FITZONE GYM.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">FITZONE GYM</h2>
+            <p><b>Technology: </b>HTML, CSS, Js.</p>
+            <p><b>Desc: </b>This is the FitZone Gym website, showcasing gym facilities, professional trainers, health
+              tips and easy to connect.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/FitZone-GYM'"" >
+                Github
+              </button>
+              <button
+                class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/FitZone-GYM/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/AaraCoffee.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">AARA COFFEE</h2>
+            <p><b>Technology: </b>HTML, CSS, Js.</p>
+            <p><b>Desc: </b>This is the Aara Coffee website, featuring premium coffee blends, skilled baristas and get
+              your Order.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/Aara-Coffee-shop'">
+                Github
+              </button>
+              <button class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/Aara-Coffee-shop/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/nammaYatri.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">NAMMAYATRI</h2>
+            <p><b>Technology: </b>HTML, CSS, Js.</p>
+            <p><b>Desc: </b>This is the NammaYatri website, offering seamless travel solutions, personalized
+              itineraries, local guides, and easy journey.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/NammaYatri'">
+                Github
+              </button>
+              <button class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/NammaYatri/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/Spotify.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">SPOFTIY</h2>
+            <p><b>Technology: </b>HTML, CSS</p>
+            <p><b>Desc: </b>This is the Spotify website, Showcase album covers and playlist thumbnails in a grid layout
+              that adjusts screen size.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/Spotify'">
+                Github
+              </button>
+              <button class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/Spotify/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/Zomoto.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">zomoto</h2>
+            <p><b>Technology: </b>HTML, CSS.</p>
+            <p><b>Desc: </b>This is the Zomato-like website, offering a interface for discovering restaurants, exploring
+              menus and easy ordering food.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/Zomoto'">
+                Github
+              </button>
+              <button class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/Zomoto/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/BookMyShow.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">BOOK MY SHOW</h2>
+            <p><b>Technology: </b>HTML, CSS.</p>
+            <p><b>Desc: </b>This is the Book My Show clone website, providing a user friendly interface to browse movie
+              and book tickets.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/Book-My-Show'">
+                Github
+              </button>
+              <button class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/Book-My-Show/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/Paramvah Studios.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">PARAMVAH&nbsp;STUDIOS</h2>
+            <p><b>Technology: </b>HTML, CSS.</p>
+            <p><b>Desc: </b>This is the Paramvah Studios website, offering a sleek, user-friendly interface to explore
+              films.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/Paramvah-Studios'">
+                Github
+              </button>
+              <button class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/Paramvah-Studios/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/PizzaHut.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">PIZZAHUT</h2>
+            <p><b>Technology: </b>HTML, CSS.</p>
+            <p><b>Desc: </b>This is the Pizza Hut clone website, featuring an intuitive interface to customize pizzas
+              and place orders.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/PizzaHut'">
+                Github
+              </button>
+              <button class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/PizzaHut/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/blinkit.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">BLINKIT</h2>
+            <p><b>Technology: </b>HTML, CSS.</p>
+            <p><b>Desc: </b>This is the Blinkit clone website, offering a quick and easy platform to shop for groceries
+              and delivered to your doorstep.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/Blinkit'">
+                Github
+              </button>
+              <button class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/Blinkit/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/Thancos.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">THANCOS&nbsp;NATUAL</h2>
+            <p><b>Technology: </b>HTML, CSS.</p>
+            <p><b>Desc: </b>This is the Thancos Natural website, showcasing a range of natural, delicious ice cream
+              flavors with a simple and user interface.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/Thancos-Natual'">
+                Github
+              </button>
+              <button class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/Thancos-Natual/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./Portfolio-Asserts/Swiggy.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">SWIGGY</h2>
+            <p><b>Technology: </b>HTML, CSS.</p>
+            <p><b>Desc: </b>This is the Swiggy clone website, providing a seamless platform to order food from local
+              restaurants and quick delivery.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ANANDH-KUMAR-R/Swiggy'">
+                Github
+              </button>
+              <button class=" btn btn-color-2 project-btn"
+                onclick="location.href='https://anandh-kumar-r.github.io/Swiggy/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project X</h2>
+            <!-- <p><b>Technology: </b>xxxxxxxxxxxxxxxxxxxxxx</p> -->
+            <!-- <p><b>Desc: </b></p> -->
+
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Github
+              </button>
+              <button class=" btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Y</h2>
+            <!-- <p><b>Technology: </b>xxxxxxxxxxxxxxxxxxxxxx</p> -->
+            <!-- <p><b>Desc: </b></p> -->
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Z</h2>
+            <!-- <p><b>Technology: </b>xxxxxxxxxxxxxxxxxxxxxx</p> -->
+            <!-- <p><b>Desc: </b></p> -->
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <!-- <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-container">
+      <div class="contact-info-upper-container" style="padding: 100px;">
+        <div class="social-media">
+          <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+            <p><a href="mailto:anandh20201@email@gmail.com">Email</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+            <p><a href="https://www.linkedin.com/in/anandh-kumar-b062b8301">LinkedIn</a></p>
+          </div>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/Black_GitHub.png" alt="LinkedIn icon" class="icon contact-icon" /><br><br>
+          <p><a href="https://github.com/ANANDH-KUMAR-R">GitHub</a></p>
+        </div>
+      </div>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <div style="padding: 2px;  max-width: 400px; margin: auto;">
+            <form>
+              <div class="sendEmail" >
+                <input type="text" id="name" placeholder="Enter your name"><br>
+
+                <input type="email" id="email" placeholder="Enter your email"><br>
+              </div>
+              <input type="text" id="subject" placeholder="Enter subject"><br>
+
+              <textarea id="message" placeholder="Write your message here"></textarea><br>
+
+              <center><button class="btnSendEmail" type="submit">Send email</button></center>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+  
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-container">
+      <!-- Social Media Links -->
+      <div class="contact-info-upper-container">
+        <div class="social-media">
+          <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+            <p><a href="mailto:anandh20201@email@gmail.com">Email</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+            <p><a href="https://www.linkedin.com/in/anandh-kumar-b062b8301">LinkedIn</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img src="./assets/Black_GitHub.png" alt="GitHub icon" class="icon contact-icon" />
+            <p><a href="https://github.com/ANANDH-KUMAR-R">GitHub</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Form -->
+      <div class="contact-info-upper-container">
+        <div class="contact-info">
+          <form  id="work-request-form">
+            <div class="sendEmail">
+              <input type="text" id="from_name" placeholder="Enter your name">
+              <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <input type="text" id="subject" placeholder="Enter subject">
+            <textarea id="message" placeholder="Write your message here"></textarea>
+            <center><button class="btnSendEmail" type="submit">Send Email</button></center>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ///////////// -->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <P><a href="mailto:anandh20201@email@gmail.com">anandh20201@gmail.com</a></P>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
